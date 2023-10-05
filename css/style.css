@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;900&family=Grand+Hotel&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
+:root{
+    --white : #fff;
+    --gray : #2f2f2f;
+    --light-gray : #f4f4f4;
+    --yellow :#ffc200;  
+    --yellow-low-opacity :#ffc40080;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+@media(max-width : 1200px){
+    .container {
+        width:1140px;
+    }
+}
+@media(max-width : 992px){
+    .container {
+        width:960px;
+    }
+}
+@media(max-width : 768px){
+    .container {
+        width:720px;
+    }
+}
+/*Start Of hero Section*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: var(--white);
+}
+.hero .logo{
+    width: 30%;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.hero .logo img{
+    width: 135px;
+    height: 50px;
+}
+.hero .hero-data{
+    height: 100%;
+    background-image: url(../imgs/right-bg.png);
+    background-size: cover;
+    padding-left: 200px;
+    padding-top: 25px;
+    padding-right: 50px;
+}
+
+.hero .hero-data .navbar{
+    width: 100%;
+    height: 50px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+.hero .hero-data .navbar ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.hero .hero-data .navbar ul li a{
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.5s all ease-in-out;
+}
+.hero .hero-data .navbar ul li a:hover{
+    color: var(--yellow);
+}
+.hero .hero-data .hero-data-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+.yellow-title{
+    color: var(--yellow);
+    font-size: 5em;
+    text-transform: capitalize;
+    font-family: 'Grand Hotel', cursive;
+}
+.hero .hero-data .hero-data-info p{
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+.order-btn{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    color: var(--gray);
+    background-color: var(--yellow);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: 0.3s all ease-in;
+}
+.order-btn:hover{
+    color: var(--yellow);
+    background-color: var(--gray);
+    border: 1px solid var(--yellow);
+}
+/*End Of hero Section*/
+/*Start Of Best Seller Section*/
+.best-seller{
+    margin-top: 100px;
+    text-align: center;
+    color: var(--gray);
+}
+.best-seller h3{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 4em;
+    text-transform: capitalize;
+}
+.best-seller p{
+    margin-top: 25px;
+    font-size: 1.1em;
+    width: 50%;
+    margin: 0 auto;
+}
+.best-seller .sellers{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.best-seller .sellers .seller img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.best-seller .sellers .seller h5{
+    margin-top: 25px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 2em;
+    
+}
+.best-seller .sellers .seller p{
+    font-size: smaller;
+}
+/*End Of Best Seller Section*/
+/*Start Of tast Section*/
+.tast{
+    margin-top: 100px;
+    background-image: url(../imgs/top-bg.png);
+    width: 100%;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.tast .img{
+    background-image: url(../imgs/background1.png);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
+}
+.tast .tast-data p{
+    width: 50%;
+    color: var(--light-gray);
+    
+}
+/*End Of tast Section*/
+/*Start Of Statistics Section*/
+.statistics{
+    background-image: url(../imgs/background2.png);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+.statistics p{
+   color: var(--light-gray);
+   width: 50%;
+   margin: 0 auto;
+}
+.statistics .circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+}
+.statistics .circles .circle{
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.statistics .circles .circle p:first-child{
+    color: var(--yellow);
+    font-size: 2em;
+    font-weight: bold;
+}
+.statistics .circles .circle p:nth-child(2){
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.chicken{
+    background-image: url(../imgs/bottom-bg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.chicken p{
+    color: var(--light-gray);
+    width: 50%;
+}
+.chicken .img{
+    background-image: url(../imgs/recipe2.png);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+/*End Of Statistics Section*/
+/* Start Of Yellow Field Section */
+.yellow-field{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imgs/background1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--gray);
+    
+}
+.yellow-field .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow-low-opacity);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.yellow-field .overlay p{
+    font-size: 2em;
+    width: 50%;
+    margin: 0 auto;
+}
+.yellow-field .overlay h3{
+    font-size: 2.5em;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Grand Hotel';
+    font-weight: 600;
+}
+/* End Of Yellow Field Section */
+/* Start Of subscribe  Section */
+.subscribe{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imgs/background3.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.subscribe h3{
+    font-size: 3em;
+    font-family: "Grand Hotel";
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.subscribe p{
+   width: 50%;
+   margin-top: 25px;
+}
+.subscribe form{
+   width: 50%;
+   text-align: center;
+   margin: 35px auto;
+}
+.subscribe form input[type="text"]{
+    width: 50%;
+    height: 35px;
+    background-color: var(--white);
+    outline: 0;
+    border: 0;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.subscribe form input[type="button"]{
+    width: 20%;
+    height: 35px;
+    background-color: var(--yellow);
+    color: var(--gray);
+    outline: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -5px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.3s all ease-in;
+}
+.subscribe form input[type="button"]:hover{
+    background-color: var(--gray);
+    color: var(--yellow);
+    
+}
+/* End Of subscribe Section */
+/* Start Of Footer Section */
+footer{
+    width: 100%;
+    background-color: var(--gray);
+    color: var(--light-gray);
+    
+    
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+footer .container .footer-row {
+    width: 20%;
+}
+footer .container .footer-row h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+footer .container .footer-row p{
+    margin-bottom: 15px;
+}
+footer .container .footer-row .social ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    width: 100%;
+}
+footer .container .footer-row .social ul li{
+    background-color: var(--light-gray);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    color: var(--gray);
+    margin-top: 15px;
+    transition: 0.3s all ease-in;
+}
+footer .container .footer-row .social ul li:first-child:hover{
+    background-color: #c13584;
+    color: var(--white);
+}
+footer .container .footer-row .social ul li:nth-child(2):hover{
+    background-color: #1877f2;
+    color: var(--white);
+}
+footer .container .footer-row .social ul li:nth-child(3):hover{
+    background-color: #1da1f2;
+    color: var(--white);
+}
+footer .container .footer-row .social ul li:nth-child(4):hover{
+    background-color: #075e54;
+    color: var(--white);
+}
+footer .container .footer-row ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+footer .container .footer-row ul li{
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+
+footer .container .footer-row ul li a{
+    color: var(--light-gray);
+    text-decoration: none;
+    transition: 0.3s all ease-in;
+}
+footer .container .footer-row ul li a:hover{
+    color: var(--yellow);
+}
+footer .right{
+    margin-top: 15px;
+    border-top: 1px solid var(--light-gray);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+footer .right a{
+   text-decoration: none;
+   color: var(--yellow);
+}
+footer .right svg{
+   color: #d20962;
+   animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+  }
+/* End Of Footer Section */
